@@ -36,7 +36,7 @@ This repository contains the codes and the data for the website:
 - ✅ Media gallery
 - ✅ Contact forms
 
-  ## Planned Updates
+## Planned Updates
 - Multi-language support
 - Backend integration
 - CMS system
