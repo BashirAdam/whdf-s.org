@@ -1,9 +1,9 @@
 #  جبهة وادي هور الديمقراطية / Wadi Hawar Democratic Front
 
 
-This repository contains the datasets, scripts, and figures for the paper: 
+This repository contains the codes and the data for the website: 
 
-> **This is a responsive website built with modern web technologies to represent the Democratic Valley Hor Front and its political and cultural vision.**
+> **This is a responsive website built with modern web technologies to represent the Wadi Hawar Democratic Front and its political and cultural vision.**
 
 
 ---
@@ -22,3 +22,25 @@ This repository contains the datasets, scripts, and figures for the paper:
 - **JavaScript** - Interactive functionality
 - **Google Fonts** - Tajawal Arabic font
 - **Batchfile**
+
+## Features
+
+### Current Features
+- ✅ Responsive design for all devices
+- ✅ Arabic language support (RTL)
+- ✅ Modern navigation menu
+- ✅ Social media integration
+- ✅ Back-to-top functionality
+- ✅ Professional footer with links
+- ✅ Interactive maps
+- ✅ Media gallery
+- ✅ Contact forms
+
+  ## Planned Updates
+- Multi-language support
+- Backend integration
+- CMS system
+
+## License
+
+> **This project is developed for the Wadi Hawar Democratic Front. All rights reserved.**
