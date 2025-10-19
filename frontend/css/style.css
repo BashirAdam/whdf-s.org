@@ -321,3 +321,13 @@ img[src="frontend/images/meeting 1.jpeg"] {
     border-radius: 0.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+/* Flag image specific styling to ensure proper sizing */
+img[src="frontend/images/Flag.jpeg"] {
+    max-width: 100% !important;
+    max-height: 100% !important;
+    width: auto !important;
+    height: auto !important;
+    object-fit: contain !important;
+    border-radius: 0 !important;
+}

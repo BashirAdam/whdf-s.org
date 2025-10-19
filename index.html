@@ -30,8 +30,8 @@
             جبهة وادي هور الديمقراطية
         </h1>
         <!-- Flag (left) -->
-        <div class="flex-shrink-0 w-16 h-8 md:w-28 md:h-16 rounded-lg overflow-hidden bg-white flex items-center justify-center shadow-md mr-2 md:mr-0">
-            <img src="frontend/images/Flag.jpeg" alt="Flag" class="w-full h-full object-contain">
+        <div class="flex-shrink-0 w-14 h-8 md:w-24 md:h-16 rounded-lg overflow-hidden bg-white flex items-center justify-center shadow-md mr-2 md:mr-0">
+            <img src="frontend/images/Flag.jpeg" alt="Flag" class="max-w-full max-h-full object-contain">
         </div>
     </header>
 
@@ -686,13 +686,13 @@ document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !modal.c
             </p>
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-4">
                     <div class="bg-gray-200 rounded-xl overflow-hidden h-40 flex items-center justify-center">
-                        <img src="https://placehold.co/400x300/cccccc/000000?text=Meeting+Photo+1" alt="صورة من الاجتماع الأول" class="w-full h-full object-cover">
+                        <img src="frontend/images/meeting 1.jpeg" alt="صورة من الاجتماع الأول" class="w-full h-full object-cover gallery-img cursor-pointer">
                     </div>
                     <div class="bg-gray-200 rounded-xl overflow-hidden h-40 flex items-center justify-center">
-                        <img src="https://placehold.co/400x300/bbbbbb/000000?text=Meeting+Photo+2" alt="صورة من الاجتماع الأول" class="w-full h-full object-cover">
+                        <img src="frontend/images/meeting 2.jpeg" alt="صورة من الاجتماع الأول" class="w-full h-full object-cover gallery-img cursor-pointer">
                     </div>
                     <div class="bg-gray-200 rounded-xl overflow-hidden h-40 flex items-center justify-center">
-                        <img src="https://placehold.co/400x300/aaaaaa/000000?text=Meeting+Photo+3" alt="صورة من الاجتماع الأول" class="w-full h-full object-cover">
+                        <img src="frontend/images/meeting 3.jpg" alt="صورة من الاجتماع الأول" class="w-full h-full object-cover gallery-img cursor-pointer">
                     </div>
                 </div>
             </div>
@@ -809,34 +809,128 @@ document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !modal.c
             <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">المعرض</h2>
             <!-- Gallery grid: all images organized in one grid -->
             <div id="gallery" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mb-8">
-                <img src="frontend/images/Flag for the .jpeg" alt="Flag for the" class="gallery-img cursor-pointer rounded-lg shadow-md w-full h-40 object-cover" />
-                <img src="frontend/images/flag number 2.jpeg" alt="Flag number 2" class="gallery-img cursor-pointer rounded-lg shadow-md w-full h-40 object-cover" />
-                <img src="frontend/images/Flag.jpeg" alt="Flag" class="gallery-img cursor-pointer rounded-lg shadow-md w-full h-40 object-cover" />
-                <img src="frontend/images/Logo.jpg" alt="Logo" class="gallery-img cursor-pointer rounded-lg shadow-md w-full h-40 object-cover" />
-                <img src="frontend/images/meeting 1.jpeg" alt="اجتماع" class="gallery-img cursor-pointer rounded-lg shadow-md w-full h-40 object-cover" />
-                <img src="frontend/images/meeting 2.jpeg" alt="Meeting 2" class="gallery-img cursor-pointer rounded-lg shadow-md w-full h-40 object-cover" />
-                <img src="frontend/images/meeting 3.jpg" alt="Meeting 3" class="gallery-img cursor-pointer rounded-lg shadow-md w-full h-40 object-cover" />
-                <img src="frontend/images/number1.jpeg" alt="Number 1" class="gallery-img cursor-pointer rounded-lg shadow-md w-full h-40 object-cover" />
-                <img src="frontend/images/number2.jpeg" alt="Number 2" class="gallery-img cursor-pointer rounded-lg shadow-md w-full h-40 object-cover" />
-                <img src="frontend/images/number3.jpeg" alt="Number 3" class="gallery-img cursor-pointer rounded-lg shadow-md w-full h-40 object-cover" />
-                <img src="frontend/images/number4.jpeg" alt="Number 4" class="gallery-img cursor-pointer rounded-lg shadow-md w-full h-40 object-cover" />
-                <img src="frontend/images/number5.jpeg" alt="Number 5" class="gallery-img cursor-pointer rounded-lg shadow-md w-full h-40 object-cover" />
-                <img src="frontend/images/number6.jpeg" alt="Number 6" class="gallery-img cursor-pointer rounded-lg shadow-md w-full h-40 object-cover" />
-                <img src="frontend/images/number7.jpeg" alt="Number 7" class="gallery-img cursor-pointer rounded-lg shadow-md w-full h-40 object-cover" />
-                <img src="frontend/images/number8.jpeg" alt="Number 8" class="gallery-img cursor-pointer rounded-lg shadow-md w-full h-40 object-cover" />
-                <img src="frontend/images/number9.jpeg" alt="Number 9" class="gallery-img cursor-pointer rounded-lg shadow-md w-full h-40 object-cover" />
-                <img src="frontend/images/number10.jpeg" alt="Number 10" class="gallery-img cursor-pointer rounded-lg shadow-md w-full h-40 object-cover" />
-                <img src="frontend/images/number11.jpeg" alt="Number 11" class="gallery-img cursor-pointer rounded-lg shadow-md w-full h-40 object-cover" />
-                <img src="frontend/images/مهرجان ثقافة الزغاوة العالمي.jpeg" alt="مهرجان ثقافة الزغاوة العالمي" class="gallery-img cursor-pointer rounded-lg shadow-md w-full h-40 object-cover" />
-                <img src="frontend/images/مهرجان ثقافة الزغاوة العالمي 2.jpeg" alt="مهرجان ثقافة الزغاوة العالمي 2" class="gallery-img cursor-pointer rounded-lg shadow-md w-full h-40 object-cover" />
+                <!-- Flag for the -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="frontend/images/Flag for the .jpeg" alt="Flag for the" class="gallery-img cursor-pointer w-full h-40 object-cover" />
+                    <p class="p-2 text-xs text-gray-700 text-right">صورة توضح العلم الثقافي للزغاوة</p>
+                </div>
+                
+                <!-- Flag number 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="frontend/images/flag number 2.jpeg" alt="Flag number 2" class="gallery-img cursor-pointer w-full h-40 object-cover" />
+                    <p class="p-2 text-xs text-gray-700 text-right">صورة توضح العلم الثقافي للزغاوة</p>
+                </div>
+                
+                <!-- Flag -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="frontend/images/Flag.jpeg" alt="Flag" class="gallery-img cursor-pointer w-full h-40 object-cover" />
+                    <p class="p-2 text-xs text-gray-700 text-right">صورة توضح العلم الثقافي للزغاوة</p>
+                </div>
+                
+                <!-- Logo -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="frontend/images/Logo.jpg" alt="Logo" class="gallery-img cursor-pointer w-full h-40 object-cover" />
+                    <p class="p-2 text-xs text-gray-700 text-right">الصورة توضح شعار جبهة وادي هور الديمقراطية</p>
+                </div>
+                
+                <!-- Meeting 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="frontend/images/meeting 1.jpeg" alt="اجتماع" class="gallery-img cursor-pointer w-full h-40 object-cover" />
+                    <p class="p-2 text-xs text-gray-700 text-right">صورة من اول اجتماع لجبهة وادي هور</p>
+                </div>
+                
+                <!-- Meeting 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="frontend/images/meeting 2.jpeg" alt="Meeting 2" class="gallery-img cursor-pointer w-full h-40 object-cover" />
+                    <p class="p-2 text-xs text-gray-700 text-right">صورة من اول اجتماع لجبهة وادي هور</p>
+                </div>
+                
+                <!-- Meeting 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="frontend/images/meeting 3.jpg" alt="Meeting 3" class="gallery-img cursor-pointer w-full h-40 object-cover" />
+                    <p class="p-2 text-xs text-gray-700 text-right">صورة من اول اجتماع لجبهة وادي هور</p>
+                </div>
+                
+                <!-- Number 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="frontend/images/number1.jpeg" alt="Number 1" class="gallery-img cursor-pointer w-full h-40 object-cover" />
+                    <p class="p-2 text-xs text-gray-700 text-right">صورة تظهر بعض افراد الزغاوة يعدون الصلاة بجانب سيارات تايوتا والجمال ويبدون في طريق السفر</p>
+                </div>
+                
+                <!-- Number 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="frontend/images/number2.jpeg" alt="Number 2" class="gallery-img cursor-pointer w-full h-40 object-cover" />
+                    <p class="p-2 text-xs text-gray-700 text-right">خريطة توضح موقع اقليم زغاوة في بالنسبة لخريطة السودان وجنوب السودان</p>
+                </div>
+                
+                <!-- Number 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="frontend/images/number3.jpeg" alt="Number 3" class="gallery-img cursor-pointer w-full h-40 object-cover" />
+                    <p class="p-2 text-xs text-gray-700 text-right">افراد من الزغاوة في الخلاء يركبون الجمال ويعتبر الجمال جزء اصيل من حياة وثقافة الزغاوة</p>
+                </div>
+                
+                <!-- Number 4 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="frontend/images/number4.jpeg" alt="Number 4" class="gallery-img cursor-pointer w-full h-40 object-cover" />
+                    <p class="p-2 text-xs text-gray-700 text-right">صورة توضح بعض جوانب الحياة اليومية للزغاوة</p>
+                </div>
+                
+                <!-- Number 5 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="frontend/images/number5.jpeg" alt="Number 5" class="gallery-img cursor-pointer w-full h-40 object-cover" />
+                    <p class="p-2 text-xs text-gray-700 text-right">صورة من التراث الثقافي للزغاوة</p>
+                </div>
+                
+                <!-- Number 6 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="frontend/images/number6.jpeg" alt="Number 6" class="gallery-img cursor-pointer w-full h-40 object-cover" />
+                    <p class="p-2 text-xs text-gray-700 text-right">صورة توضح بعض جوانب الحياة الاجتماعية للزغاوة</p>
+                </div>
+                
+                <!-- Number 7 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="frontend/images/number7.jpeg" alt="Number 7" class="gallery-img cursor-pointer w-full h-40 object-cover" />
+                    <p class="p-2 text-xs text-gray-700 text-right">صورة من البيئة الطبيعية في مناطق الزغاوة</p>
+                </div>
+                
+                <!-- Number 8 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="frontend/images/number8.jpeg" alt="Number 8" class="gallery-img cursor-pointer w-full h-40 object-cover" />
+                    <p class="p-2 text-xs text-gray-700 text-right">صورة توضح بعض جوانب الثقافة الزغاوية</p>
+                </div>
+                
+                <!-- Number 9 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="frontend/images/number9.jpeg" alt="Number 9" class="gallery-img cursor-pointer w-full h-40 object-cover" />
+                    <p class="p-2 text-xs text-gray-700 text-right">صورة من الحياة اليومية للزغاوة</p>
+                </div>
+                
+                <!-- Number 10 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="frontend/images/number10.jpeg" alt="Number 10" class="gallery-img cursor-pointer w-full h-40 object-cover" />
+                    <p class="p-2 text-xs text-gray-700 text-right">صورة توضح بعض جوانب التراث الزغاوي</p>
+                </div>
+                
+                <!-- Number 11 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="frontend/images/number11.jpeg" alt="Number 11" class="gallery-img cursor-pointer w-full h-40 object-cover" />
+                    <p class="p-2 text-xs text-gray-700 text-right">صورة من الثقافة والفنون الزغاوية</p>
+                </div>
+                
+                <!-- مهرجان ثقافة الزغاوة العالمي -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="frontend/images/مهرجان ثقافة الزغاوة العالمي.jpeg" alt="مهرجان ثقافة الزغاوة العالمي" class="gallery-img cursor-pointer w-full h-40 object-cover" />
+                    <p class="p-2 text-xs text-gray-700 text-right">صورة من مهرجان ثقافة الزغاوة العالمي</p>
+                </div>
+                
+                <!-- مهرجان ثقافة الزغاوة العالمي 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="frontend/images/مهرجان ثقافة الزغاوة العالمي 2.jpeg" alt="مهرجان ثقافة الزغاوة العالمي 2" class="gallery-img cursor-pointer w-full h-40 object-cover" />
+                    <p class="p-2 text-xs text-gray-700 text-right">صورة من مهرجان ثقافة الزغاوة العالمي</p>
+                </div>
             </div>
         </div>
-    <!-- Lightbox Popup -->
-    <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden">
-        <span id="close-lightbox" class="absolute top-4 right-6 text-white text-4xl cursor-pointer">&times;</span>
-        <img id="lightbox-img" src="" alt="صورة مكبرة" class="max-w-full max-h-[80vh] rounded-lg shadow-2xl border-4 border-white" />
     </div>
-</div>
 
     <!-- Contact Page Content -->
     <div id="contact-page" class="flex-grow p-4 md:p-8 hidden">
@@ -1178,67 +1272,59 @@ document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !modal.c
 
             <!-- Map Container -->
             <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-200 mb-8">
-                <div id="map" class="w-full h-64 sm:h-96 rounded-lg overflow-hidden"></div>
-                <div id="infoBox" class="info-box mt-4 p-4 bg-gray-50 rounded-lg">
-                    <p id="infoText" class="text-gray-700 text-content text-right">خريطة تفاعلية لإقليم دار زغاوة (إقليم بيربي)</p>
-                </div>
-            </div>
-
-            <!-- Region Information -->
-            <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
-                <!-- Geographic Info -->
-                <div class="bg-white p-6 rounded-xl shadow-lg">
-                    <h3 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
-                        <svg class="w-6 h-6 text-blue-600 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path>
-                        </svg>
-                        المعلومات الجغرافية
-                    </h3>
-                    <div class="space-y-3">
-                        <div class="flex justify-between">
-                            <span class="font-semibold text-gray-700">الموقع:</span>
-                            <span class="text-gray-600">شمال وغرب دارفور، السودان</span>
-                        </div>
-                        <div class="flex justify-between">
-                            <span class="font-semibold text-gray-700">الإحداثيات:</span>
-                            <span class="text-gray-600">13.5°N, 25.5°E</span>
-                        </div>
-                        <div class="flex justify-between">
-                            <span class="font-semibold text-gray-700">المساحة التقريبية:</span>
-                            <span class="text-gray-600">~50,000 كم²</span>
-                        </div>
-                        <div class="flex justify-between">
-                            <span class="font-semibold text-gray-700">الحدود:</span>
-                            <span class="text-gray-600">تشاد، ليبيا، مصر ، السودان </span>
-                        </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <!-- Map Image -->
+                    <div class="h-80 sm:h-[500px] rounded-lg overflow-hidden flex items-center justify-center">
+                        <img src="frontend/images/number2.jpeg" alt="خريطة إقليم دار زغاوة" class="w-full h-full object-contain rounded-lg">
                     </div>
-                </div>
-
-                <!-- Population Info -->
-                <div class="bg-white p-6 rounded-xl shadow-lg">
-                    <h3 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
-                        <svg class="w-6 h-6 text-green-600 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"></path>
-                        </svg>
-                        المعلومات السكانية
-                    </h3>
-                    <div class="space-y-3">
-                        <div class="flex justify-between">
-                            <span class="font-semibold text-gray-700">الشعب الرئيسي:</span>
-                            <span class="text-gray-600">الزغاوة</span>
-                        </div>
-                        <div class="flex justify-between">
-                            <span class="font-semibold text-gray-700">اللغة:</span>
-                            <span class="text-gray-600">البريا</span>
+                    
+                    <!-- Map Information -->
+                    <div class="space-y-6">
+                        <!-- Geographical Information -->
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h3 class="text-lg font-bold text-gray-800 mb-3 text-right">المعلومات الجغرافية</h3>
+                            <div class="space-y-2 text-right">
+                                <div class="flex justify-between">
+                                    <span class="font-semibold text-gray-700">الموقع:</span>
+                                    <span class="text-gray-600">شمال وغرب دارفور، السودان</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="font-semibold text-gray-700">الإحداثيات:</span>
+                                    <span class="text-gray-600">13.5°N, 25.5°E</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="font-semibold text-gray-700">المساحة التقريبية:</span>
+                                    <span class="text-gray-600">~50,000 كم²</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="font-semibold text-gray-700">الحدود:</span>
+                                    <span class="text-gray-600">تشاد، ليبيا، مصر، السودان</span>
+                                </div>
+                            </div>
                         </div>
                         
-                        <div class="flex justify-between">
-                            <span class="font-semibold text-gray-700">التبعية</span>
-                            <span class="text-gray-600">السودان</span>
+                        <!-- Population Information -->
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h3 class="text-lg font-bold text-gray-800 mb-3 text-right">المعلومات السكانية</h3>
+                            <div class="space-y-2 text-right">
+                                <div class="flex justify-between">
+                                    <span class="font-semibold text-gray-700">الشعب الرئيسي:</span>
+                                    <span class="text-gray-600">الزغاوة</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="font-semibold text-gray-700">اللغة:</span>
+                                    <span class="text-gray-600">البريا</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="font-semibold text-gray-700">التبعية:</span>
+                                    <span class="text-gray-600">السودان</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
 
             <!-- Historical Context -->
             <div class="mt-8 bg-gradient-to-r from-blue-50 to-green-50 p-8 rounded-xl">
@@ -1275,6 +1361,12 @@ document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !modal.c
                 </p>
             </div>
         </div>
+    </div>
+    
+    <!-- Lightbox Popup -->
+    <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden">
+        <span id="close-lightbox" class="absolute top-4 right-6 text-white text-4xl cursor-pointer">&times;</span>
+        <img id="lightbox-img" src="" alt="صورة مكبرة" class="max-w-full max-h-[80vh] rounded-lg shadow-2xl border-4 border-white" />
     </div>
     
     <!-- Footer Section -->
